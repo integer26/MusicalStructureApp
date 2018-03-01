@@ -4,7 +4,11 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -20,6 +24,26 @@ public class Main2Activity extends AppCompatActivity {
                 backMain ();
             }
         } );
+
+        // Create a list of words
+        ArrayList<String> song = new ArrayList<String>();
+        song.add("Time");
+        song.add("Atlas");
+        song.add("Tangled");
+        song.add("Animals");
+        song.add("Carolina in my mind");
+        song.add("Forsaken");
+        song.add("Fix you");
+        song.add("Crawling");
+        song.add("Africa");
+        song.add("Uprising");
+
+        ArrayAdapter<String> itemsAdapter =
+                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, song);
+
+        ListView listView = (ListView) findViewById(R.id.list);
+
+        listView.setAdapter(itemsAdapter);
     }
 
     public void backMain(){

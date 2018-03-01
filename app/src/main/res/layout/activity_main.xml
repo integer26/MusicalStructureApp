@@ -24,7 +24,7 @@
         android:id="@+id/songsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Songs" />
+        android:text="@string/songs" />
 
     <TextView
         android:id="@+id/songName"
@@ -34,7 +34,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="PROVA"
+        android:text="@string/music_app"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -73,19 +73,19 @@
             android:id="@+id/previous"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Previous" />
+            android:text="@string/previous" />
 
         <Button
             android:id="@+id/playPause"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Play/Pause" />
+            android:text="@string/play_pause" />
 
         <Button
             android:id="@+id/next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Next" />
+            android:text="@string/next" />
 
     </LinearLayout>
 
