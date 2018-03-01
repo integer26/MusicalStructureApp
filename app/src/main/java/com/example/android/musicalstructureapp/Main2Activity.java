@@ -37,6 +37,12 @@ public class Main2Activity extends AppCompatActivity {
         song.add("Crawling");
         song.add("Africa");
         song.add("Uprising");
+        song.add("Sussudio");
+        song.add("Orion");
+        song.add("Give it Away");
+        song.add("Lullaby");
+        song.add("Outcry");
+
 
         ArrayAdapter<String> itemsAdapter =
                 new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, song);
